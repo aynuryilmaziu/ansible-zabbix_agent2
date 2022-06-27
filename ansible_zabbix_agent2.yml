@@ -60,7 +60,7 @@
         - {regexp: "^ServerActive=127.0.0.1$", replace: "ServerActive={{zabbix_server}}"}
         - {regexp: "^Hostname=Zabbix server$", replace: "Hostname={{ansible_fqdn}}"}
       vars:
-        - zabbix_server: zabbix.mono.biz.tr
+        - zabbix_server: zabbix.biz.tr
 
     - name: Start the zabbix agent2
       service:
